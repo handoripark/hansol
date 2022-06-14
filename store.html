@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+:root{
+  --yellow: #ffbe5d;
+}
+
+header{
+  background-color:rgb(216, 88, 88);
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0 48px;
+  transition: all 0.3s;
+}
+
+header.scrolled{
+  background-color: #fff;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+
+
+header nav{
+  flex: 1 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav a{
+  margin: 0 0 0 16px;
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.category{
+    margin-left: 200px;
+}
+
+
+
+
+.product_frame {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width:940px;
+  margin:0 auto;
+  text-align: center;
+
+}
+
+.product p{
+  text-decoration: none;
+}
+
+.product a:not(:last-child) {
+  float:left;
+  margin-right:20px;
+}
+
+.product img {
+  height:300px;
+  width:300px;
+  margin-bottom: 20px;
+}
+
+.product img:hover {
+  opacity:.6;
+}
+
+.product a p {
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.product a p:nth-child(2) {
+  margin-bottom: 4px;
+}
+
+.product {
+  margin-bottom: 80px;
+  margin-top: 30px;
+  
+}
+
+.product_frame{
+    margin-top: 100px;
+}
+
+div .store_category a:not(:last-child){
+    margin-right: 10px;
+}
+
+
+div .store_category a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.bottom{
+    background-color: rgb(244, 244, 244);
+    padding: 80px;
+}
+
+.bottom h3{
+    color:rgb(216, 88, 88);
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.bottom p{
+    color: rgb(58, 58, 58);
+    font-size: 12px;
+    text-align: left;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html"><img src="https://i.postimg.cc/tCL4CVkW/image.png" alt="logo" width="50px"></a>
+        </div>
+        <nav class="category">
+          <a href="aboutus.html">About Us</a>
+          <a href="#">Store</a>
+          <a href="#">Contents</a>
+          <a href="#">Notice</a>
+        </nav>
+    
+        <nav>
+            <a href="#">Mypage</a>
+            <a href="#">Login</a>
+        </nav>
+      </header>
+
+
+      <div class="product_frame">
+
+        <div class="store_category">
+        
+            <a href="#" class="cate_first">All</a>
+            <a href="#">Case</a>
+            <a href="#">Grip-Tok</a>
+            <a href="#">Stickers</a>
+            <a href="#">Letter</a>
+        
+      </div>
+
+        <div class="product">
+          <a href="#">
+            <img src="https://i.postimg.cc/FF8K9sjM/Kakao-Talk-20220614-011045154.jpg" alt="상품사진1">
+            <p>Picnic Stickers</p>
+            <p>2,500</p>
+          </a>
+          <a href="#">
+            <img src="https://i.postimg.cc/cHjDF4CS/Kakao-Talk-20220614-011045154-05.jpg" alt="상품사진2">
+              <p>Dog Griptok</p>
+              <p>12,000</p>
+          </a>
+          <a href="#">
+              <img src="https://i.postimg.cc/Y0Qg6XY7/Kakao-Talk-20220614-011045154-04.jpg" alt="상품사진3">
+              <p>Summer Stickers</p>
+              <p>2,500</p>
+          </a>
+        </div>
+        
+        <div class="product">
+          <a href="#">
+            <img src="https://i.postimg.cc/Kz6BgXKQ/Kakao-Talk-20220614-011045154-13.jpg" alt="상품사진4">
+            <p>Wintter Griptok</p>
+            <p>12,000</p>
+           </a>
+           <a href="#">
+             <img src="https://i.postimg.cc/7Pg3nTPV/Kakao-Talk-20220614-011045154-15.jpg" alt="상품사진5">
+             <p>Cabin Postcard</p>
+             <p>3,500</p>
+           </a>
+           <a href="#">
+             <img src="https://i.postimg.cc/hvmws8Pg/Kakao-Talk-20220614-011045154-14.jpg" alt="상품사진6">
+             <p>Blanket Griptok</p>
+             <p>2,500</p> 
+           </a>
+          </div>
+          <div class="product">
+            <a href="#">
+              <img src="https://i.postimg.cc/J0Ww9YFt/Kakao-Talk-20220614-011045154-22.jpg" alt="상품사진7">
+              <p>Christmas Sticker</p>
+              <p>1,500</p>
+            </a>
+            <a href="#">
+              <img src="https://i.postimg.cc/HLbsYVGS/Kakao-Talk-20220614-011045154-07.jpg" alt="상품사진8">
+              <p>Music Sticker</p>
+              <p>12,000</p>
+            </a>
+            <a href="#">
+              <img src="https://i.postimg.cc/hP7FWNRs/Kakao-Talk-20220614-011045154-03.jpg" alt="상품사진9">
+              <p>Fairy Sticker</p>
+              <p>25,00</p>
+            </a>
+        </div>
+        
+        
+      </div>
+
+      <div class="bottom">
+        <h3>Doridori</h3>
+        <p>CS CENTER : 010-0000-0000</p>
+        <p>MON-FRI. 10AM - 6PM</p>
+        <p>SAT / SUN / HOLIDAY OFF</p>
+       </div>
+    
+
+
+      <script src="navbar.js"></script>
+
+    
+    
+    </body>
+</html>

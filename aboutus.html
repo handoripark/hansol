@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+:root{
+  --yellow: #ffbe5d;
+}
+
+header{
+  background-color:rgb(216, 88, 88);
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0 48px;
+  transition: all 0.3s;
+}
+
+header.scrolled{
+  background-color: #fff;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+
+
+header nav{
+  flex: 1 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav a{
+  margin: 0 0 0 16px;
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.category{
+    margin-left: 200px;
+}
+
+.aboutus{
+    height: 700px;
+    background-image: url("https://i.postimg.cc/brCzF2nJ/image.jpg");
+    background-size:cover;
+    background-position: center;
+
+}
+
+.brand{
+    padding: 100px;
+    text-align: center;
+}
+
+.brand h2{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.brand p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    font-size: 14px;
+}
+
+.character{
+    height: 2200px;
+    background-color: #ffe0a6;
+    padding-top:100px;
+}
+
+.character h2{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.ch1{
+    background-color: white;
+    border-radius: 40px;
+    width: 800px;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.ch1 .txt{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.ch_txt h3{
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+.ch_txt p{
+    font-size: 14px;
+    width: 325px;
+    margin-left: 30px;
+
+}
+
+.en{
+  color: rgb(142, 142, 142);
+}
+
+.bottom{
+    background-color: rgb(244, 244, 244);
+    padding: 80px;
+}
+
+.bottom h3{
+    color:rgb(216, 88, 88);
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.bottom p{
+    color: rgb(58, 58, 58);
+    font-size: 12px;
+    text-align: left;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="https://i.postimg.cc/tCL4CVkW/image.png" alt="logo" width="50px"></a>
+        </div>
+        <nav class="category">
+          <a href="aboutus.html">About Us</a>
+          <a href="store.html">Store</a>
+          <a href="#">Contents</a>
+          <a href="#">Notice</a>
+        </nav>
+    
+        <nav>
+            <a href="#">Mypage</a>
+            <a href="#">Login</a>
+        </nav>
+      </header>
+
+      <div class="aboutus"></div>
+      <div class="brand">
+        <h2>Brand Story</h2>
+        <p>'도리도리마켓'은 호주에서 일어난 산불로 피해를 입은 코알라, 웜뱃, 캥거루를 주인공으로 동물들에게 힘이 되고자 활동을 시작하게 되었습니다.
+            현재 귀여운 동물들의 소소한 일상을 제품으로 담아내는 작은 마켓을 운영중에 있으며 사람들과 동물 모두에게 긍적적인 영향을 미치는
+             것을<br> 브랜드의 목표로 삼고있습니다.<br><br></p>
+             <div class="en">
+               <p> Dori Dori Market started its activities to help animals with koalas, wombats, and kangaroos that were damaged 
+                by forest fires in Australia.Currently, we run a small market that captures the small 
+                daily lives of cute animals as a product and aims to have a positive impact on both people and animals.
+             </p>
+            </div>
+      </div>
+
+      <div class="character">
+        <h2>Characters</h2>
+
+        <div class="ch1">
+            <div><img src="https://i.postimg.cc/RhDN9xwv/dori.png"width="350px"></div>
+            <div class="ch_txt"><h3>Dori</h3><p>도리도리 빌리지에 제일 먼저 이사온 '도리'는 모험을 좋아하는 코알라입니다. 
+              사교성이 좋아 친구들과 잘 어울리며
+                가끔씩 조용한 구석에서 사고를 치기도 합니다.
+            </p></div>
+        </div>
+        <div class="ch1">
+          <div><img src="https://i.postimg.cc/7h87CQ93/derz.png"width="350px"></div>
+          <div class="ch_txt"><h3>Der-Z</h3><p>다른 친구들에 비해 몸집이 작은 더지는 상상하는 것을 좋아하는 두더지입니다.
+            주로 땅속에서 이동하며 걸음이 느려 부지런히 움직이는 습관을 가지고 있습니다.
+          </p></div>
+        </div>
+
+      <div class="ch1">
+        <div><img src="https://i.postimg.cc/hj9vY48m/tori.png"width="350px"></div>
+        <div class="ch_txt"><h3>Tori</h3><p>파란 츄리닝을 애착옷으로 여기는 토리는 얌전한 웜뱃입니다. 마을을 어슬렁거리며 돌아다니면서
+          도움을 청하는 곳이면 언제 어디든 가서 도움을 주는 착한
+        </p></div>
+      </div>
+
+    <div class="ch1">
+      <div><img src="https://i.postimg.cc/SxsXKhq0/kori.png"width="350px"></div>
+      <div class="ch_txt"><h3>Kori</h3><p>새 장난감을 좋아하는 '코리'는 소심한 캥거루입니다. 집에서 혼자 차마시는 것을 즐기지만
+        친구들과 보내는 시간도 소중히 여깁니다. 레고놀이를 취미로 가지고 있습니다.
+      </p></div>
+  </div>
+
+
+      </div>
+
+      <div class="bottom">
+        <h3>Doridori</h3>
+        <p>CS CENTER : 010-0000-0000</p>
+        <p>MON-FRI. 10AM - 6PM</p>
+        <p>SAT / SUN / HOLIDAY OFF</p>
+       </div>
+    
+
+
+      <script src="navbar.js"></script>
+
+    
+    
+</body>
+</html>
